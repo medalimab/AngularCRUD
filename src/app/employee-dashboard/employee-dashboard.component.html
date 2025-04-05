@@ -1,1 +1,88 @@
-<p>employee-dashboard works!</p>
+<!-- Barre de navigation -->
+<nav class="navbar navbar-light bg-primary">
+    <div class="container-fluid">
+        <h1 style="color: aliceblue;">Angular CRUD</h1>
+        <div class="d-flex">
+            <button class="btn btn-light" data-toggle="modal" data-target="#staticBackdrop">
+                Add Employee
+            </button>
+        </div>
+    </div>
+</nav>
+
+
+<table class="table mt-3">
+    <thead> <tr>
+    <th scope="col">Employee ID</th>
+    <th scope="col">First Name</th>
+    <th scope="col">Last Name</th>
+    <th scope="col">Email ID</th>
+    <th
+    scope="col">Mobile ID</th>
+    <th scope="col">Salary</th>
+    <th scope="col">Action</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td>
+        <td>1</td>
+        <td>Slim</td>
+        <td>Chouchane</td>
+        <td> Salim&#64;gmail.com</td>
+        <td>999999999</td>
+        <td>TND 2100</td>
+        <td>
+        <button class="btn btn-info">Edit</button>
+        <button class="btn btn-danger">Delete</button>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+
+        <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-
+backdrop="static" tabindex="-1" role="dialog" aria-
+labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-
+title" id="staticBackdropLabel"> Employee Details</h5>
+<button type="button" class="close" data-dismiss="modal" aria-
+label="Close">
+<span aria-hidden="true" >&times;</span>
+</button>
+</div>
+<div class="modal-body">
+<form  [formGroup]="formValue">
+<div class="mb-3">
+<label for="FirstName" class="form-label">First Name</label>
+<input type="text" class="form-control" formControlName="firstName" id="firstName">
+</div>
+<div class="mb-3">
+<label for="LastName" class="form-label">Last Name</label>
+<input type="text" class="form-control" formControlName="lastName" id="lastName">
+</div>
+<div class="mb-3">
+<label for="email" class="form-label"> Email</label>
+<input type="email" class="form-control" id="email" formControlName="email">
+</div>
+<div class="mb-3">
+<label for="LastName" class="form-label">Mobile Number</label>
+<input type="text" class="form-control" formControlName="mobile" id="mobile">
+</div>
+<div class="mb-3">
+<label for="salary" class="form-label">Salary</label>
+<input type="text" class="form-control" formControlName="salary" id="salary">
+</div>
+</form>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary" data-
+dismiss="modal">Close</button>
+<button type="button" class="btn btn-primary">Add</button>
+</div>
+</div>
+</div>
+</div>
