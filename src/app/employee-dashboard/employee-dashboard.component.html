@@ -24,19 +24,19 @@
     </tr>
     </thead>
     <tbody>
-        <tr>
-        <td>
-        <td>1</td>
-        <td>Slim</td>
-        <td>Chouchane</td>
-        <td> Salim&#64;gmail.com</td>
-        <td>999999999</td>
-        <td>TND 2100</td>
-        <td>
-        <button class="btn btn-info">Edit</button>
-        <button class="btn btn-danger">Delete</button>
-        </td>
-        </tr>
+        <tr *ngFor="let row of employeeData">
+            <td>{{row.id}}</td>
+            <td>{{row.firstName}}</td>
+            <td>{{row.lastName}}</td>
+            <td>{{row.email}}</td>
+            <td>{{row.mobile}}</td>
+            <td>{{row.salary}}</td>
+            <td>
+                <button type="button" (click)="onEdit(row)" data-toggle="modal"
+data-target="#staticBackdrop" class="btn btn-info">Edit</button>
+            <button class="btn btn-danger" (click)="deleteEmployee(row)">Delete</button>
+            </td>
+            </tr>
         </tbody>
         </table>
 
@@ -81,7 +81,9 @@ label="Close">
 <div class="modal-footer">
 <button type="button" class="btn btn-secondary" data-
 dismiss="modal">Close</button>
-<button type="button" class="btn btn-primary">Add</button>
+<button type="button"  (click)="postEmployeeDetails()" class="btn btn-primary">Add</button>
+<button type="button" (click)="updateEmployeeDetails()" class="btn btn-warning">
+    Update</button>
 </div>
 </div>
 </div>
