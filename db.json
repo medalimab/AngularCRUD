@@ -1,12 +1,36 @@
 {
-    "posts": [
+  "posts": [
     {
-    "id": "0",
-    "firstName": "premier",
-    "lastName": "employé",
-    "email": "first@gmail.com",
-    "mobile": "99112233",
-    "salary": "50000"
+      "id": "2",
+      "firstName": "testttttttttttt",
+      "lastName": "Mabrouk",
+      "email": "mabroukdali1925@gmail.com",
+      "mobile": "92055508",
+      "salary": "dd"
+    },
+    {
+      "id": "1",
+      "firstName": "Mohamed Aliddd",
+      "lastName": "Mabrouk",
+      "email": "mabrouk.mohamedali@Esprit.tn",
+      "mobile": "92055508",
+      "salary": "dd"
+    },
+    {
+      "id": "1",
+      "firstName": "yzyzyz",
+      "lastName": "isiisi",
+      "email": "technicien@atlaprest.com",
+      "mobile": "ddd",
+      "salary": "dd"
+    },
+    {
+      "id": 5,
+      "firstName": "Mohamed Ali",
+      "lastName": "Mabrouk",
+      "email": "mabroukdali1925@gmail.com",
+      "mobile": "92055508",
+      "salary": "dd"
     }
-    ]
-    }
+  ]
+}
